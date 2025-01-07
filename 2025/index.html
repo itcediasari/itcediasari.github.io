@@ -174,8 +174,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90px;
-        height: 90px;
+        width: 100px; /* Ukuran penuh stiker */
+        height: 100px;
         margin-left: auto;
         margin-right: auto;
         box-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
@@ -183,15 +183,18 @@
         -webkit-backdrop-filter: blur(5px);
         background: rgba(255, 255, 255, 0.7);
         border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        padding: 10px;
+        border-radius: 50%; /* Membuat stiker berbentuk bulat */
+        padding: 0; /* Pastikan padding nol */
         margin-bottom: 20px;
         transition: all 0.75s ease;
+        overflow: hidden; /* Supaya gambar tidak keluar dari lingkaran */
       }
 
       .stiker img {
-        width: 85px;
-        height: 85px;
+        width: 100%; /* Pastikan gambar memenuhi stiker */
+        height: 100%;
+        object-fit: cover; /* Menjaga proporsi gambar */
+        border-radius: 50%; /* Pastikan gambar juga bulat */
       }
 
       b.merah {
@@ -444,7 +447,7 @@
         <div class="swiper-slide">
           <!-- Stiker dan teks -->
           <div id="stiker1" class="scale0 stiker">
-            <img src="glg.gif" />
+            <img src="image.jpeg" />
           </div>
           <h1 id="teks1" class="scale0 itim" style="font-size: 20px">
             this is for youuu 🫶<br />
@@ -455,7 +458,7 @@
         <div class="swiper-slide">
           <!-- Stiker dan teks -->
           <div id="stiker2" class="scale0 stiker">
-            <img src="emh.gif" />
+            <img src="image2.jpeg" />
           </div>
           <h1 id="teks2" class="scale0 itim" style="font-size: 19px">
             ciee, whose birthday is today 💞<br /><br /><span
