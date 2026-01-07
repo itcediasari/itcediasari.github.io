@@ -1,233 +1,802 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Mirrored from www.ingridkuhn.com/themes/liebe_html/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jan 2022 03:54:34 GMT -->
+<html lang="id">
   <head>
     <meta charset="utf-8" />
-    <!--[if IE]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <![endif]-->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!-- Page title -->
-    <title>Itce & Elfin</title>
-    <!--[if lt IE 9]>
-      <script src="js/respond.js"></script>
-    <![endif]-->
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <!-- Icon fonts -->
-    <link
-      href="fonts/font-awesome/css/font-awesome.min.css"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="fonts/glyphicons/bootstrap-glyphicons.css"
-      rel="stylesheet"
-      type="text/css" />
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700i"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i"
-      rel="stylesheet"
-      type="text/css" />
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="css/plugins.css" />
-    <!-- Color Style CSS -->
-    <link href="styles/lavender.css" rel="stylesheet" />
-    <!-- Favicons-->
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="../../apple-icon-72x72.html" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="../../apple-icon-114x114.html" />
+    <meta
+      name="description"
+      content="Dokumentasi Ulang Tahun Itce & Elfin - Kenangan Indah Setiap Tahun" />
+    <title>Itce & Elfin 💕</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Switcher Only -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      id="switcher-css"
-      type="text/css"
-      href="switcher/css/switcher.css"
-      media="all" />
-    <!-- END Switcher Styles -->
-    <!-- Demo Examples (For Module #3) -->
-    <link
-      rel="alternate stylesheet"
-      type="text/css"
-      href="styles/summer.css"
-      title="summer"
-      media="all" />
-    <link
-      rel="alternate stylesheet"
-      type="text/css"
-      href="styles/serenity.css"
-      title="serenity"
-      media="all" />
-    <link
-      rel="alternate stylesheet"
-      type="text/css"
-      href="styles/lavender.css"
-      title="lavender"
-      media="all" />
-    <!-- END Demo Examples -->
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+      /* =============================================
+         Modern Landing Page - Itce & Elfin
+         ============================================= */
+
+      :root {
+        --primary: #ff6b9d;
+        --primary-light: #ff9ec4;
+        --primary-dark: #e91e63;
+        --secondary: #ffeef8;
+        --accent-gold: #ffd700;
+        --white: #ffffff;
+        --dark: #2d2d3a;
+        --gradient-bg: linear-gradient(
+          135deg,
+          #667eea 0%,
+          #764ba2 50%,
+          #f093fb 100%
+        );
+        --gradient-pink: linear-gradient(135deg, #ff6b9d 0%, #ff9ec4 100%);
+        --glass-bg: rgba(255, 255, 255, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.2);
+        --font-heading: 'Playfair Display', serif;
+        --font-body: 'Inter', sans-serif;
+        --font-handwriting: 'Caveat', cursive;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background: var(--gradient-bg);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        color: var(--white);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Floating Elements */
+      .floating-hearts {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+
+      .heart-float {
+        position: absolute;
+        font-size: 20px;
+        opacity: 0.3;
+        animation: floatUp 15s linear infinite;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(100vh) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.3;
+        }
+        90% {
+          opacity: 0.3;
+        }
+        100% {
+          transform: translateY(-10vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Navigation */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 1rem 2rem;
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--glass-border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .navbar.scrolled {
+        background: rgba(0, 0, 0, 0.4);
+        padding: 0.8rem 2rem;
+      }
+
+      .logo {
+        font-family: var(--font-handwriting);
+        font-size: 1.8rem;
+        color: var(--white);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .logo:hover {
+        color: var(--primary-light);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.3s;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+
+      .nav-links a:hover {
+        background: var(--glass-bg);
+        color: var(--primary-light);
+      }
+
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        border-radius: 12px;
+        padding: 0.5rem;
+        min-width: 150px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .dropdown-menu a {
+        display: block;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+      }
+
+      .dropdown-menu a:hover {
+        background: var(--primary);
+        color: var(--white);
+      }
+
+      /* Mobile Menu */
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 6rem 2rem 4rem;
+        position: relative;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 10;
+        max-width: 800px;
+      }
+
+      .hero-photos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .photo-card {
+        position: relative;
+      }
+
+      .photo-glow {
+        position: absolute;
+        inset: -15px;
+        border-radius: 50%;
+        background: var(--gradient-pink);
+        filter: blur(25px);
+        opacity: 0.5;
+        animation: pulse 3s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.5;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 0.7;
+        }
+      }
+
+      .photo-card img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--white);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 2;
+        transition: transform 0.3s;
+      }
+
+      .photo-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .heart-between {
+        font-size: 2.5rem;
+        color: var(--primary);
+        animation: heartbeat 1.5s infinite;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        10%,
+        30% {
+          transform: scale(1.15);
+        }
+        20% {
+          transform: scale(1.25);
+        }
+      }
+
+      .hero-title {
+        font-family: var(--font-heading);
+        font-size: clamp(3rem, 8vw, 5rem);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-title .ampersand {
+        font-style: italic;
+        color: var(--primary-light);
+        margin: 0 0.5rem;
+      }
+
+      .hero-subtitle {
+        font-family: var(--font-handwriting);
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        opacity: 0.9;
+        margin-bottom: 2rem;
+      }
+
+      .hero-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: var(--white);
+        color: var(--primary-dark);
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        transition: all 0.3s;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .hero-cta:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        background: var(--primary);
+        color: var(--white);
+      }
+
+      .scroll-indicator {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        animation: bounce 2s infinite;
+        cursor: pointer;
+      }
+
+      .scroll-indicator span {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(-10px);
+        }
+      }
+
+      /* Years Section */
+      .years-section {
+        padding: 6rem 2rem;
+        position: relative;
+        z-index: 10;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section-title h2 {
+        font-family: var(--font-heading);
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 0.5rem;
+      }
+
+      .section-title p {
+        font-family: var(--font-handwriting);
+        font-size: 1.5rem;
+        opacity: 0.8;
+      }
+
+      .years-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .year-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        padding: 2rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--white);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .year-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: var(--gradient-pink);
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+
+      .year-card:hover {
+        transform: translateY(-10px) scale(1.02);
+        border-color: var(--primary);
+        box-shadow: 0 20px 50px rgba(255, 107, 157, 0.3);
+      }
+
+      .year-card:hover::before {
+        opacity: 0.1;
+      }
+
+      .year-card-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .year-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .year-number {
+        font-family: var(--font-heading);
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .year-label {
+        font-family: var(--font-handwriting);
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+
+      .year-card.featured {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 107, 157, 0.3) 0%,
+          rgba(233, 30, 99, 0.2) 100%
+        );
+        border-color: var(--primary);
+      }
+
+      .year-card.featured .year-label {
+        color: var(--primary-light);
+        font-weight: 700;
+      }
+
+      /* About Section */
+      .about-section {
+        padding: 6rem 2rem;
+        position: relative;
+        z-index: 10;
+      }
+
+      .about-container {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .about-content {
+        background: var(--glass-bg);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        border-radius: 24px;
+        padding: 3rem;
+      }
+
+      .about-photos {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .about-photo {
+        text-align: center;
+      }
+
+      .about-photo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--primary);
+        margin-bottom: 1rem;
+        transition: transform 0.3s;
+      }
+
+      .about-photo:hover img {
+        transform: scale(1.05);
+      }
+
+      .about-photo h3 {
+        font-family: var(--font-handwriting);
+        font-size: 1.8rem;
+        color: var(--primary-light);
+      }
+
+      .about-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        opacity: 0.9;
+      }
+
+      .about-text .highlight {
+        color: var(--primary-light);
+        font-weight: 600;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 3rem 2rem;
+        position: relative;
+        z-index: 10;
+        border-top: 1px solid var(--glass-border);
+      }
+
+      .footer p {
+        font-family: var(--font-handwriting);
+        font-size: 1.3rem;
+        opacity: 0.8;
+      }
+
+      .footer-heart {
+        color: var(--primary);
+        animation: heartbeat 1.5s infinite;
+        display: inline-block;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+        .menu-toggle {
+          display: block;
+        }
+
+        .nav-links.active {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.95);
+          padding: 1rem;
+          gap: 0.5rem;
+        }
+
+        .dropdown-menu {
+          position: static;
+          background: rgba(255, 255, 255, 0.05);
+          margin-top: 0.5rem;
+        }
+
+        .hero-photos {
+          gap: 1rem;
+        }
+        .photo-card img {
+          width: 100px;
+          height: 100px;
+        }
+        .heart-between {
+          font-size: 1.8rem;
+        }
+
+        .about-photos {
+          gap: 2rem;
+        }
+        .about-photo img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    </style>
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-    <!-- Preloader ends -->
-    <nav class="navbar navbar-custom navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display  -->
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#navbar-brand-centered">
-            <i class="fa fa-bars"></i>
-          </button>
-          <div class="navbar-brand navbar-brand-centered page-scroll">
-            <a href="#page-top">
-              <!-- logo  -->
-              <!-- <img src="img/logo.png" class="img-responsive" alt="" /> -->
-              <!-- IT & EL -->
-            </a>
+
+  <body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo"> <span>💕</span> Itce & Elfin </a>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#years">Memories</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-btn">
+            Ultah <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="./2020/index.html">2020</a>
+            <a href="./2021/index.html">2021</a>
+            <a href="./2022/index.html">2022</a>
+            <a href="./2025/index.html">2025</a>
+            <a href="./2026/index.html">✨ 2026 ✨</a>
           </div>
-          <!--/navbar-brand -->
-        </div>
-        <!--/navbar-header -->
-        <!-- Collect the nav links, forms, and other content for toggling  -->
-        <div class="collapse navbar-collapse" id="navbar-brand-centered">
-          <ul class="nav navbar-nav page-scroll">
-            <li><a href="#page-top">Home</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right page-scroll">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                >Ultah<b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="./2020/index.html">2020</a></li>
-                <li><a href="./2021/index.html">2021</a></li>
-                <li><a href="./2022/index.html">2022</a></li>
-                <li><a href="./2025/index.html">2025</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
+        </li>
+      </ul>
     </nav>
-    <!-- /navbar ends -->
-    <!-- Ken burns Slideshow -->
-    <div class="slideshow">
-      <!-- images path in the CSS file -->
-      <div class="slideshow-image"></div>
-      <div class="slideshow-image"></div>
-      <div class="slideshow-image"></div>
-      <div class="slideshow-image"></div>
-    </div>
-    <!-- section: intro-->
-    <section id="intro" class="container-fluid">
-      <div class="intro-heading margin col-md-12 text-center">
-        <h1 class="text-light">
-          Itce <span class="italic text-light"> & </span> Elfin
-        </h1>
-        <h5 class="margin1 text-ornament">Dokumentasi Ulang Tahun Itce</h5>
-      </div>
-      <!-- /col-md-6-->
-    </section>
-    <!-- /section ends -->
-    <!-- Section: Save date-->
-    <section id="save-date">
-      <!-- parallax ornaments -->
-      <div
-        class="ornament2 hidden-sm hidden-xs hidden-md"
-        data-0="opacity:1;"
-        data-100="transform:translatex(0%);"
-        data-center-center="transform:translatex(90%);">
-        <!-- illustration path in the color template CSS -->
-      </div>
-      <div
-        class="ornament3 hidden-sm hidden-xs hidden-md"
-        data-0="opacity:1;"
-        data-100="transform:translatex(80%);"
-        data-center-center="transform:translatex(30%);">
-        <!-- illustration path in the color template CSS -->
-      </div>
-      <!-- /ornament3 -->
-    </section>
-    <!-- /section ends -->
-    <!-- section:about-->
-    <section id="about" class="watercolor">
-      <!-- container -->
-      <div class="container">
-        <div class="section-heading">
-          <h2>About The Couple</h2>
-          <!-- divider -->
-          <div class="hr"></div>
-        </div>
-        <!-- /section-heading-->
-        <!-- Bride Info -->
-        <div class="col-md-5 col-md-offset-1">
-          <img
-            src="img/2.png"
-            alt=""
-            class="main-img img-responsive img-circle" />
-          <h4 class="text-ornament">Elfin</h4>
-        </div>
-        <!-- /col-md-5 -->
-        <!-- Groom Info -->
-        <div class="col-md-5 res-margin">
-          <img
-            src="img/1.png"
-            alt=""
-            class="main-img img-responsive img-circle" />
-          <h4 class="text-ornament">Itce</h4>
-        </div>
-        <!-- /col-md-5 -->
-      </div>
-      <!-- /container -->
-    </section>
-    <!-- /section ends -->
-    <!-- parallax ornament -->
 
-    <!-- /footer ends -->
-    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Main Js -->
-    <script src="js/main.js"></script>
-    <!-- RSVP form -->
-    <script src="js/rsvp.js"></script>
-    <!--Other Plugins -->
-    <script src="js/plugins.js"></script>
-    <!-- Prefix free CSS -->
-    <script src="js/prefixfree.js"></script>
-    <!-- maps-->
-    <script src="js/map.js"></script>
-    <!-- Bootstrap Select Tool (For Module #4) -->
-    <script src="switcher/js/bootstrap-select.js"></script>
-    <!-- UI jQuery (For Module #5 and #6) -->
-    <script
-      src="../../../ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"
-      type="text/javascript"></script>
-    <!-- All Scripts & Plugins -->
-    <script src="switcher/js/dmss.js"></script>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-photos">
+          <div class="photo-card">
+            <div class="photo-glow"></div>
+            <img src="img/1.png" alt="Itce" />
+          </div>
+          <div class="heart-between">💕</div>
+          <div class="photo-card">
+            <div class="photo-glow"></div>
+            <img src="img/2.png" alt="Elfin" />
+          </div>
+        </div>
+        <h1 class="hero-title">Itce <span class="ampersand">&</span> Elfin</h1>
+        <p class="hero-subtitle">Dokumentasi Ulang Tahun Penuh Cinta 💖</p>
+        <a href="./2026/index.html" class="hero-cta">
+          <span>Lihat Terbaru 2026</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div
+        class="scroll-indicator"
+        onclick="document.getElementById('years').scrollIntoView({behavior: 'smooth'})">
+        <span>Scroll untuk explore</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Years Section -->
+    <section class="years-section" id="years">
+      <div class="section-title">
+        <h2>Kenangan Setiap Tahun</h2>
+        <p>Momen spesial yang tak terlupakan ✨</p>
+      </div>
+      <div class="years-grid">
+        <a href="./2020/index.html" class="year-card">
+          <div class="year-card-content">
+            <div class="year-icon">🎂</div>
+            <div class="year-number">2020</div>
+            <div class="year-label">Awal Cerita</div>
+          </div>
+        </a>
+        <a href="./2021/index.html" class="year-card">
+          <div class="year-card-content">
+            <div class="year-icon">💕</div>
+            <div class="year-number">2021</div>
+            <div class="year-label">Kisah Berlanjut</div>
+          </div>
+        </a>
+        <a href="./2022/index.html" class="year-card">
+          <div class="year-card-content">
+            <div class="year-icon">💍</div>
+            <div class="year-number">2022</div>
+            <div class="year-label">Moment Spesial</div>
+          </div>
+        </a>
+        <a href="./2025/index.html" class="year-card">
+          <div class="year-card-content">
+            <div class="year-icon">🌸</div>
+            <div class="year-number">2025</div>
+            <div class="year-label">Penuh Cinta</div>
+          </div>
+        </a>
+        <a href="./2026/index.html" class="year-card featured">
+          <div class="year-card-content">
+            <div class="year-icon">✨</div>
+            <div class="year-number">2026</div>
+            <div class="year-label">🔥 TERBARU!</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="section-title">
+          <h2>The Couple</h2>
+          <p>Dua hati yang bersatu 💑</p>
+        </div>
+        <div class="about-content">
+          <div class="about-photos">
+            <div class="about-photo">
+              <img src="img/1.png" alt="Itce" />
+              <h3>Itce</h3>
+            </div>
+            <div class="about-photo">
+              <img src="img/2.png" alt="Elfin" />
+              <h3>Elfin</h3>
+            </div>
+          </div>
+          <p class="about-text">
+            Website ini dibuat dengan
+            <span class="highlight">penuh cinta</span> untuk mendokumentasikan
+            setiap momen ulang tahun yang spesial. Setiap tahunnya, ada cerita
+            baru yang indah untuk dikenang bersama. 💕
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with <span class="footer-heart">❤️</span> by Elfin for Itce</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Create floating hearts
+      function createFloatingHearts() {
+        const container = document.getElementById('floatingHearts');
+        const hearts = ['💕', '💖', '💗', '💓', '❤️', '💘'];
+
+        for (let i = 0; i < 15; i++) {
+          const heart = document.createElement('div');
+          heart.className = 'heart-float';
+          heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+          heart.style.left = Math.random() * 100 + 'vw';
+          heart.style.animationDelay = Math.random() * 15 + 's';
+          heart.style.animationDuration = Math.random() * 10 + 10 + 's';
+          container.appendChild(heart);
+        }
+      }
+
+      // Navbar scroll effect
+      window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // Mobile menu toggle
+      document.getElementById('menuToggle').addEventListener('click', () => {
+        document.getElementById('navLinks').classList.toggle('active');
+      });
+
+      // Initialize
+      createFloatingHearts();
+    </script>
   </body>
-
-  <!-- Mirrored from www.ingridkuhn.com/themes/liebe_html/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jan 2022 03:54:34 GMT -->
 </html>

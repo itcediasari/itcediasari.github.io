@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Happy Birthday Sayang 💕 2026</title>
+    <meta
+      name="description"
+      content="Selamat Ulang Tahun untuk istriku tercinta, Itce Diasari" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/1.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- TypeIt -->
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background Music -->
+    <audio src="../2025/mhbd.mp3" id="bgMusic" loop></audio>
+
+    <!-- Loading Overlay -->
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+        <div class="loading-text" id="loadingText">
+          <span>Hai sayang...</span>
+          <span>Ada sesuatu untukmu 💕</span>
+        </div>
+        <div class="love-button" id="loveButton">
+          <div class="heart-wrapper">
+            <svg
+              class="heart-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                fill="url(#heartGradient)" />
+              <defs>
+                <linearGradient
+                  id="heartGradient"
+                  x1="2"
+                  y1="3"
+                  x2="22"
+                  y2="21"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#ff6b9d" />
+                  <stop offset="100%" stop-color="#e91e63" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span class="tap-text">Tap untuk membuka 💖</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Hearts Container -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Sparkles Container -->
+    <div class="sparkles-container" id="sparklesContainer"></div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <div class="photo-wrapper">
+            <div class="photo-glow"></div>
+            <img src="../2025/image.jpeg" alt="Itce" class="hero-photo" />
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">Happy Birthday</span>
+            <span class="title-name">Itce Diasari</span>
+            <span class="title-heart">💕</span>
+          </h1>
+          <p class="hero-date">7 Januari 2026</p>
+          <div class="scroll-indicator">
+            <span>Swipe untuk melanjutkan</span>
+            <div class="scroll-arrow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Swiper Container -->
+      <div class="swiper mainSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1: Introduction -->
+          <div class="swiper-slide">
+            <div class="slide-content glass-card">
+              <div class="sticker">
+                <img src="../2025/image.jpeg" alt="" />
+              </div>
+              <h2 class="slide-title">Untuk Kamu 🫶</h2>
+              <p class="slide-text">
+                Yang selalu menerangi hariku dengan senyumanmu...
+              </p>
+              <div class="swipe-hint">
+                <span>⇒ Swipe ⇒</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Birthday Wish -->
+          <div class="swiper-slide">
+            <div class="slide-content glass-card">
+              <div class="sticker bounce">
+                <img src="../2025/glg.gif" alt="" />
+              </div>
+              <h2 class="slide-title">Ciee yang ultah! 🎂</h2>
+              <p class="slide-text">
+                Hari ini adalah hari yang sangat spesial...
+              </p>
+              <div class="swipe-hint">
+                <span>⇒ Swipe ⇒</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Love Letter -->
+          <div class="swiper-slide love-letter-slide">
+            <div class="slide-content glass-card letter-card">
+              <div class="letter-header">
+                <div class="sticker small">
+                  <img src="../2025/kdp2.gif" alt="" />
+                </div>
+                <h2 class="letter-title">💌 Surat Cinta Untukmu</h2>
+              </div>
+              <div class="letter-content" id="letterContent">
+                <p id="loveLetter"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Photo Gallery -->
+          <div class="swiper-slide gallery-slide">
+            <div class="slide-content glass-card">
+              <h2 class="slide-title">📸 Momen Kita</h2>
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="../2025/image.jpeg" alt="Our moment" />
+                </div>
+                <div class="gallery-item">
+                  <img src="../2025/image2.jpeg" alt="Our moment" />
+                </div>
+                <div class="gallery-item">
+                  <img src="../img/THM_2540.jpg" alt="Our moment" />
+                </div>
+                <div class="gallery-item">
+                  <img src="../img/IMG_9813 (1).JPG" alt="Our moment" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Final Wish -->
+          <div class="swiper-slide final-slide">
+            <div class="slide-content glass-card">
+              <div class="final-content">
+                <h2 class="final-title">I Love You</h2>
+                <p class="final-subtitle">Itce Diasari</p>
+                <div class="heart-animation">
+                  <div class="heart big"></div>
+                  <div class="heart medium"></div>
+                  <div class="heart small"></div>
+                </div>
+                <p class="final-text">
+                  Semoga panjang umur, sehat selalu, murah rezeki,<br />
+                  dan selalu bahagia bersamaku selamanya! 💕
+                </p>
+                <div class="signature">
+                  <span>Dengan cinta,</span>
+                  <span class="signature-name">Elfin 💖</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="https://itcediasari.github.io/">Itce ❤ Elfin</a>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main Script -->
+    <script>
+      // Love Letter Content
+      const loveLetterText = `
+        <span class="greeting">Hai istriku tercinta, Itce Diasari,</span><br/><br/>
+        
+        <span class="highlight">✨ Happy Birthday, Sayang! ✨</span><br/><br/>
+        
+        Hari ini adalah hari yang sangat spesial, hari dimana kamu dilahirkan ke dunia 
+        untuk membawa kebahagiaan dan cinta ke hidupku.<br/><br/>
+        
+        Aku bersyukur setiap hari karena Tuhan telah mengirimkan kamu sebagai 
+        belahan jiwaku. Kamu adalah sumber kekuatanku, inspirasiku, dan pelengkap hidupku.<br/><br/>
+        
+        <span class="love-text">💕 Aku mencintai setiap hal tentangmu, Itce 💕</span><br/><br/>
+        
+        Semoga dengan bertambahnya usia, kamu semakin bahagia, sehat selalu, 
+        dan segala impianmu terwujud. Aku akan selalu ada di sisimu untuk 
+        mendukungmu, mencintaimu, dan menjagamu, selamanya.<br/><br/>
+        
+        Kamu adalah segalanya bagiku, dan aku berjanji akan selalu berusaha 
+        menjadi suami terbaik untukmu. Terima kasih telah menjadi istri yang 
+        hebat, penuh kasih, dan selalu membuat hidupku lebih indah.<br/><br/>
+        
+        <span class="highlight">Sekali lagi, Happy Birthday, my love! 🎂💐❤️</span><br/><br/>
+        
+        Mari kita terus menciptakan kenangan indah bersama, dan menjadikan 
+        hidup kita penuh cinta dan kebahagiaan. 🥳💕
+      `;
+
+      // Audio
+      const bgMusic = document.getElementById('bgMusic');
+
+      // Overlay Elements
+      const overlay = document.getElementById('overlay');
+      const loadingText = document.getElementById('loadingText');
+      const loveButton = document.getElementById('loveButton');
+      const mainContent = document.getElementById('mainContent');
+
+      // Show love button after loading
+      setTimeout(() => {
+        loadingText.classList.add('hide');
+        setTimeout(() => {
+          loveButton.classList.add('show');
+        }, 500);
+      }, 1500);
+
+      // Love Button Click Handler
+      loveButton.addEventListener('click', () => {
+        bgMusic.play().catch(() => {});
+        overlay.classList.add('hide');
+        mainContent.classList.add('show');
+        startHeartRain();
+        startSparkles();
+      });
+
+      // Initialize Swiper
+      const swiper = new Swiper('.mainSwiper', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        on: {
+          slideChange: function () {
+            // Trigger love letter animation on slide 3
+            if (this.activeIndex === 2) {
+              startLoveLetterAnimation();
+            }
+          },
+        },
+      });
+
+      // Love Letter Typing Animation
+      let letterAnimated = false;
+      function startLoveLetterAnimation() {
+        if (letterAnimated) return;
+        letterAnimated = true;
+
+        const letterEl = document.getElementById('loveLetter');
+        new TypeIt('#loveLetter', {
+          strings: [loveLetterText],
+          speed: 5,
+          cursor: false,
+          html: true,
+          afterComplete: () => {
+            startCelebration();
+          },
+        }).go();
+      }
+
+      // Floating Hearts
+      function createHeart() {
+        const heart = document.createElement('div');
+        heart.className = 'floating-heart';
+        heart.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        `;
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+        heart.style.opacity = Math.random() * 0.5 + 0.3;
+        heart.style.setProperty('--size', Math.random() * 20 + 15 + 'px');
+
+        document.getElementById('heartsContainer').appendChild(heart);
+
+        setTimeout(() => heart.remove(), 6000);
+      }
+
+      function startHeartRain() {
+        setInterval(createHeart, 300);
+      }
+
+      // Sparkles Effect
+      function createSparkle() {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.style.left = Math.random() * 100 + 'vw';
+        sparkle.style.top = Math.random() * 100 + 'vh';
+        sparkle.style.animationDelay = Math.random() * 2 + 's';
+
+        document.getElementById('sparklesContainer').appendChild(sparkle);
+
+        setTimeout(() => sparkle.remove(), 4000);
+      }
+
+      function startSparkles() {
+        setInterval(createSparkle, 500);
+      }
+
+      // Celebration Effect
+      function startCelebration() {
+        for (let i = 0; i < 20; i++) {
+          setTimeout(createHeart, i * 100);
+        }
+      }
+
+      // Prevent scroll on overlay
+      overlay.addEventListener('touchmove', (e) => e.preventDefault(), {
+        passive: false,
+      });
+    </script>
+  </body>
+</html>
